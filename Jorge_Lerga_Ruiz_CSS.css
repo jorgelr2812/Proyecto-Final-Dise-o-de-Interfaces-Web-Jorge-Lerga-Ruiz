@@ -294,6 +294,13 @@ footer a:hover {
     text-decoration: underline;
 }
 
+/* Estilos para los enlaces de GitHub en el footer */
+.enlaces-github {
+    margin-top: 10px;
+    font-size: 0.8em;
+    opacity: 0.8;
+}
+
 @media (max-width: 900px) {
 
     header .logo,
