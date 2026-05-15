@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peluquería - Información</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Jorge_Lerga_Ruiz_CSS.css">
 </head>
 
@@ -13,64 +15,72 @@
         <div class="logo">✂️ [LOGO]</div>
         <nav>
             <ul>
-                <li><a href="Jorge_Lerga_Ruiz_Index.html">Inicio</a></li>
-                <li><a href="#">Servicios</a></li>
-                <li><a href="#">Galería</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="index.html#servicios">Servicios</a></li>
+                <li><a href="Jorge_Lerga_Ruiz_galeria.html">Galería</a></li>
                 <li><a href="Jorge_Lerga_Ruiz_informacion.html" class="activo">Contacto</a></li>
             </ul>
         </nav>
-        <div class="idioma">[Idioma ▼]</div>
     </header>
 
     <main>
-        <section class="info-completa">
-            <h2>Información de la Peluquería</h2>
+        <section class="container my-5 text-center">
+            <h2 class="mb-4">Información de la Peluquería</h2>
 
-            <div class="contenedor-info">
-                <div class="caja-info">
-                    <h3>⏰ Horario de Apertura</h3>
-                    <table class="tabla-horarios">
-                        <thead>
-                            <tr>
-                                <th>Día</th>
-                                <th>Mañana</th>
-                                <th>Tarde</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Lunes - Viernes</td>
-                                <td>09:00 - 14:00</td>
-                                <td>16:00 - 20:30</td>
-                            </tr>
-                            <tr>
-                                <td>Sábados</td>
-                                <td>09:00 - 14:00</td>
-                                <td>Cerrado</td>
-                            </tr>
-                            <tr>
-                                <td>Domingos</td>
-                                <td colspan="2" style="text-align: center;">Cerrado</td>
-                            </tr>
-                        </tbody>
-                    </table>
+            <!-- Usando la rejilla de Bootstrap para centrar el contenido -->
+            <div class="row justify-content-center g-4">
+                
+                <div class="col-md-5">
+                    <div class="caja-info h-100 shadow-sm p-4 bg-white rounded border">
+                        <h3>⏰ Horario de Apertura</h3>
+                        <table class="tabla-horarios mt-3">
+                            <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th>Mañana</th>
+                                    <th>Tarde</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunes - Viernes</td>
+                                    <td>09:00 - 14:00</td>
+                                    <td>16:00 - 20:30</td>
+                                </tr>
+                                <tr>
+                                    <td>Sábados</td>
+                                    <td>09:00 - 14:00</td>
+                                    <td>Cerrado</td>
+                                </tr>
+                                <tr>
+                                    <td>Domingos</td>
+                                    <td colspan="2">Cerrado</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
 
-                <div class="caja-info">
-                    <h3>📞 Contacto y Dirección</h3>
-                    <ul class="lista-contacto">
-                        <li><strong>Teléfono Fijo:</strong> 91 123 45 67</li>
-                        <li><strong>Móvil / WhatsApp:</strong> 600 123 456</li>
-                        <li><strong>Email:</strong> contacto@peluqueriaejemplo.com</li>
-                        <li><strong>Dirección:</strong> Calle Principal, 123, Madrid</li>
-                    </ul>
+                <div class="col-md-5">
+                    <div class="caja-info h-100 shadow-sm p-4 bg-white rounded border">
+                        <h3>📞 Contacto y Dirección</h3>
+                        <ul class="lista-contacto list-unstyled mt-3 text-start">
+                            <li class="mb-2"><strong>Teléfono Fijo:</strong> 91 123 45 67</li>
+                            <li class="mb-2"><strong>Móvil / WhatsApp:</strong> 600 123 456</li>
+                            <li class="mb-2"><strong>Email:</strong> contacto@peluqueriaejemplo.com</li>
+                            <li><strong>Dirección:</strong> Calle Principal, 123, Madrid</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
 
-            <div class="mapa-ubicacion">
-                <h3>📍 Nuestra Ubicación</h3>
-                <img src="mapa_placeholder.jpg" alt="Mapa de localización de la peluquería" class="imagen-mapa">
-
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-10">
+                    <div class="mapa-ubicacion">
+                        <h3>📍 Nuestra Ubicación</h3>
+                        <img src="mapa_placeholder.jpg" alt="Mapa de localización de la peluquería" class="img-fluid rounded border shadow-sm mt-3">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -86,6 +96,9 @@
                Web: <a href="https://jorgelr2812.github.io/Proyecto-Final-Dise-o-de-Interfaces-Web-Jorge-Lerga-Ruiz/">GitHub Pages</a></p>
         </div>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
