@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Peluquería - Inicio</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="Jorge_Lerga_Ruiz_CSS.css">
 </head>
 
@@ -13,7 +15,7 @@
         <div class="logo">✂️ [LOGO]</div>
         <nav>
             <ul>
-                <li><a href="Jorge_Lerga_Ruiz_Index.html" class="activo">Inicio</a></li>
+                <li><a href="index.html" class="activo">Inicio</a></li>
                 <li><a href="#servicios">Servicios</a></li>
                 <li><a href="Jorge_Lerga_Ruiz_galeria.html">Galería</a></li>
                 <li><a href="Jorge_Lerga_Ruiz_informacion.html">Contacto</a></li>
@@ -38,8 +40,11 @@
                     Nos esforzamos por ofrecer un trato personalizado y resultados profesionales.
                 </p>
                 <img src="salon_interior.jpg" alt="Interior de la peluquería" class="imagen-destacada">
-
-                <button class="boton-cita">Reservar cita</button>
+                
+                <!-- Botón de Bootstrap que abre el Modal -->
+                <button type="button" class="btn btn-warning shadow-sm fw-bold" data-bs-toggle="modal" data-bs-target="#modalCita">
+                    Reservar cita
+                </button>
             </div>
 
             <div class="sugerencias">
@@ -51,50 +56,61 @@
             </div>
         </section>
 
-        <section id="servicios" class="contenedor-servicios">
+        <!-- Aplicación del Sistema de Rejilla de Bootstrap (Secciones A y B del texto) -->
+        <section id="servicios" class="container my-5">
+            <div class="row justify-content-between">
+                
+                <!-- Columna de Servicios (7/12 del ancho en pantallas medianas) -->
+                <div class="col-md-7 servicios">
+                    <h3>Nuestros Servicios Profesionales</h3>
+                    
+                    <div class="detalle-servicios">
+                        <article class="tarjeta-servicio mb-3">
+                            <h4>✂️ Corte de Pelo</h4>
+                            <p>Cortes adaptados a tu estilo. Incluye lavado y masaje.</p>
+                            <span class="precio">Desde 25€</span>
+                        </article>
 
-            <div class="servicios">
-                <h3>Nuestros Servicios Profesionales</h3>
+                        <article class="tarjeta-servicio mb-3">
+                            <h4>🎨 Coloración</h4>
+                            <p>Mechas Balayage, tintes sin amoniaco y corrección de color.</p>
+                            <span class="precio">Desde 45€</span>
+                        </article>
 
-                <div class="detalle-servicios">
-                    <article class="tarjeta-servicio">
-                        <h4>✂️ Corte de Pelo</h4>
-                        <p>Cortes adaptados a tu estilo. Incluye lavado y masaje.</p>
-                        <span class="precio">Desde 25€</span>
-                    </article>
-
-                    <article class="tarjeta-servicio">
-                        <h4>🎨 Coloración</h4>
-                        <p>Mechas Balayage, tintes sin amoniaco y corrección de color.</p>
-                        <span class="precio">Desde 45€</span>
-                    </article>
-
-                    <article class="tarjeta-servicio">
-                        <h4>✨ Tratamientos</h4>
-                        <p>Hidratación profunda, botox capilar y keratina.</p>
-                        <span class="precio">Desde 30€</span>
-                    </article>
+                        <article class="tarjeta-servicio">
+                            <h4>✨ Tratamientos</h4>
+                            <p>Hidratación profunda, botox capilar y keratina.</p>
+                            <span class="precio">Desde 30€</span>
+                        </article>
+                    </div>
                 </div>
-            </div>
 
-            <div class="contacto">
-                <h3>Reserva tu servicio ahora</h3>
-                <form>
-                    <label>Nombre:</label>
-                    <input type="text" placeholder="Tu nombre" required>
+                <!-- Columna de Contacto (4/12 del ancho en pantallas medianas) -->
+                <div class="col-md-4 contacto p-4 border rounded bg-white shadow-sm align-self-start">
+                    <h3>Reserva tu servicio</h3>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" placeholder="Tu nombre" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label class="form-label">Servicio:</label>
+                            <select class="form-select">
+                                <option>Corte</option>
+                                <option>Color</option>
+                                <option>Tratamiento</option>
+                            </select>
+                        </div>
 
-                    <label>Servicio:</label>
-                    <select>
-                        <option>Corte</option>
-                        <option>Color</option>
-                        <option>Tratamiento</option>
-                    </select>
+                        <div class="mb-3">
+                            <label class="form-label">Fecha preferida:</label>
+                            <input type="date" class="form-control">
+                        </div>
 
-                    <label>Fecha preferida:</label>
-                    <input type="date">
-
-                    <button type="submit">Solicitar Cita</button>
-                </form>
+                        <button type="submit" class="btn btn-dark w-100">Solicitar Cita</button>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
@@ -105,7 +121,32 @@
             <a href="Jorge_Lerga_Ruiz_informacion.html">📞 Teléfono</a> |
             <a href="Jorge_Lerga_Ruiz_informacion.html">⏰ Horario</a>
         </p>
+        <div class="enlaces-github" style="margin-top: 10px; font-size: 0.8em; opacity: 0.8;">
+            <p>Código: <a href="https://github.com/jorgelr2812/Proyecto-Final-Dise-o-de-Interfaces-Web-Jorge-Lerga-Ruiz">GitHub</a> | 
+               Web: <a href="https://jorgelr2812.github.io/Proyecto-Final-Dise-o-de-Interfaces-Web-Jorge-Lerga-Ruiz/">GitHub Pages</a></p>
+        </div>
     </footer>
+
+    <!-- Modal de Bootstrap (Componente Interactivo) -->
+    <div class="modal fade" id="modalCita" tabindex="-1" aria-labelledby="modalCitaLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalCitaLabel">Reserva Online</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            ¡Gracias por tu interés! Esta funcionalidad de reserva directa estará disponible muy pronto. Por ahora, utiliza el formulario de la parte inferior.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
