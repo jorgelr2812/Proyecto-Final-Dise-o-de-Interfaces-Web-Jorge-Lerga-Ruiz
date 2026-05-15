@@ -239,18 +239,12 @@ button:hover {
     margin: 0 auto;
 }
 
+
+/* Limpieza de floats antiguos para Bootstrap */
 .caja-info {
-    float: left;
-    width: 48%;
     background-color: #FFFFFF;
-    padding: 20px;
     border: 1px solid #D9C7A3;
     border-radius: 8px;
-    margin-right: 4%;
-}
-
-.caja-info:last-child {
-    margin-right: 0;
 }
 
 .contenedor-info::after {
