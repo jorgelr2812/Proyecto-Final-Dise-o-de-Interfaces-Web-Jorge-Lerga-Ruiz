@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peluquería - Inicio</title>
+    <link rel="stylesheet" href="Jorge_Lerga_Ruiz_CSS.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">✂️ [LOGO]</div>
+        <nav>
+            <ul>
+                <li><a href="Jorge_Lerga_Ruiz_Index.html" class="activo">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="Jorge_Lerga_Ruiz_galeria.html">Galería</a></li>
+                <li><a href="Jorge_Lerga_Ruiz_informacion.html">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="selector-idioma">
+            <select name="idioma">
+                <option value="es">🇪🇸 Español</option>
+                <option value="en">🇬🇧 English</option>
+                <option value="de">🇩🇪 Deutsch</option>
+            </select>
+        </div>
+    </header>
+
+    <main>
+        <section class="presentacion">
+            <div class="texto">
+                <h2>Bienvenido a nuestra peluquería</h2>
+                <p>
+                    Ofrecemos servicios de peluquería, estética y cuidado capilar para todo tipo de clientes.
+                    Nos esforzamos por ofrecer un trato personalizado y resultados profesionales.
+                </p>
+                <img src="salon_interior.jpg" alt="Interior de la peluquería" class="imagen-destacada">
+
+                <button class="boton-cita">Reservar cita</button>
+            </div>
+
+            <div class="sugerencias">
+                <h3>Deja tu sugerencia</h3>
+                <form>
+                    <textarea placeholder="Escribe tu sugerencia aquí..." required></textarea>
+                    <button type="submit">Enviar Sugerencia</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="servicios" class="contenedor-servicios">
+
+            <div class="servicios">
+                <h3>Nuestros Servicios Profesionales</h3>
+
+                <div class="detalle-servicios">
+                    <article class="tarjeta-servicio">
+                        <h4>✂️ Corte de Pelo</h4>
+                        <p>Cortes adaptados a tu estilo. Incluye lavado y masaje.</p>
+                        <span class="precio">Desde 25€</span>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <h4>🎨 Coloración</h4>
+                        <p>Mechas Balayage, tintes sin amoniaco y corrección de color.</p>
+                        <span class="precio">Desde 45€</span>
+                    </article>
+
+                    <article class="tarjeta-servicio">
+                        <h4>✨ Tratamientos</h4>
+                        <p>Hidratación profunda, botox capilar y keratina.</p>
+                        <span class="precio">Desde 30€</span>
+                    </article>
+                </div>
+            </div>
+
+            <div class="contacto">
+                <h3>Reserva tu servicio ahora</h3>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" placeholder="Tu nombre" required>
+
+                    <label>Servicio:</label>
+                    <select>
+                        <option>Corte</option>
+                        <option>Color</option>
+                        <option>Tratamiento</option>
+                    </select>
+
+                    <label>Fecha preferida:</label>
+                    <input type="date">
+
+                    <button type="submit">Solicitar Cita</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            <a href="Jorge_Lerga_Ruiz_informacion.html">📍 Dirección</a> |
+            <a href="Jorge_Lerga_Ruiz_informacion.html">📞 Teléfono</a> |
+            <a href="Jorge_Lerga_Ruiz_informacion.html">⏰ Horario</a>
+        </p>
+    </footer>
+</body>
+
+</html>
