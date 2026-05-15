@@ -1,0 +1,11 @@
+# Temporary files
+~$*
+.DS_Store
+Thumbs.db
+
+# XML extracts (if any)
+PLANTILLA_EXTRACTED/
+FILLED_EXTRACTED/
+template_text.txt
+filled_text.txt
+scratch/
