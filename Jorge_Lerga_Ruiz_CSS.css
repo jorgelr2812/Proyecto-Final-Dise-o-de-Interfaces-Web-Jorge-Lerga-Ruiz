@@ -218,13 +218,14 @@ button:hover {
 }
 
 .foto-item {
-    display: inline-block;
-    width: 300px;
     background-color: #FFFFFF;
     padding: 10px;
     border: 1px solid #D9C7A3;
-    margin: 10px;
-    vertical-align: top;
+    transition: transform 0.3s ease;
+}
+
+.foto-item:hover {
+    transform: scale(1.02);
 }
 
 .foto-item img {
