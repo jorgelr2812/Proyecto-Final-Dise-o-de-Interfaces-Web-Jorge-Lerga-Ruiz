@@ -38,9 +38,30 @@
                 
                 
                 <!-- Botón de Bootstrap que abre el Modal -->
-                <button type="button" class="btn btn-warning shadow-sm fw-bold" data-bs-toggle="modal" data-bs-target="#modalCita">
-                    Reservar cita
-                </button>
+                <div class="d-flex flex-wrap gap-2 mt-3">
+                    <button type="button" class="btn btn-warning shadow-sm fw-bold" data-bs-toggle="modal" data-bs-target="#modalCita">
+                        <i class="bi bi-calendar-check me-1"></i> Reservar cita
+                    </button>
+                    
+                    <!-- Sección de Audioguía (Punto 3.3 del temario) -->
+                    <div class="audioguia-container p-3 border rounded bg-light shadow-sm flex-grow-1">
+                        <p class="small fw-bold mb-2"><i class="bi bi-headphones me-1"></i> Audioguía de Bienvenida</p>
+                        <audio controls class="w-100" style="height: 35px;">
+                            <source src="audioguia.mp4" type="audio/mp4">
+                            Tu navegador no soporta el elemento de audio.
+                        </audio>
+                        <div class="mt-2 text-end">
+                            <button class="btn btn-sm btn-outline-secondary py-0" style="font-size: 0.75rem;" data-bs-toggle="collapse" data-bs-target="#transcripcion">
+                                Ver Transcripción
+                            </button>
+                        </div>
+                        <div class="collapse mt-2" id="transcripcion">
+                            <div class="card card-body small p-2 bg-white text-start">
+                                <strong>Transcripción:</strong> Bienvenido a JLR Peluquería. En este audio te explicamos nuestros servicios y cómo reservar tu cita online. Esperamos verte pronto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
             <div class="sugerencias">
