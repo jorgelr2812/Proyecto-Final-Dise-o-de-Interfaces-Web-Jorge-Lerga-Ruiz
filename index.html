@@ -45,43 +45,49 @@
                     </p>
                 </div>
 
-                <!-- Botón de Bootstrap que abre el Modal -->
-                <div class="d-flex flex-wrap gap-2 mt-3">
-                    <button type="button" class="btn btn-warning shadow-sm fw-bold" data-bs-toggle="modal" data-bs-target="#modalCita">
-                        <i class="bi bi-calendar-check me-1"></i> Reservar cita
-                    </button>
-                    
-                    <!-- Sección de Audioguía (Punto 3.3 del temario) -->
-                    <div class="audioguia-container p-3 border rounded bg-light shadow-sm flex-grow-1">
-                        <p class="small fw-bold mb-2"><i class="bi bi-headphones me-1"></i> Audioguía de Bienvenida</p>
-                        <audio controls class="w-100" style="height: 35px;">
-                            <source src="audioguia.mp4" type="audio/mp4">
-                            Tu navegador no soporta el elemento de audio.
-                        </audio>
-                        <div class="mt-2 text-end">
-                            <button class="btn btn-sm btn-outline-secondary py-0" style="font-size: 0.75rem;" data-bs-toggle="collapse" data-bs-target="#transcripcion">
-                                Ver Transcripción
-                            </button>
+                <!-- Elementos Multimedia (Temario 3.3 y 3.4) -->
+                <div class="row g-3 mt-3">
+                    <!-- Columna de Audioguía -->
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded bg-light shadow-sm h-100 d-flex flex-column justify-content-between">
+                            <div>
+                                <p class="small fw-bold mb-2"><i class="bi bi-headphones me-1 text-primary"></i> Audioguía</p>
+                                <audio controls class="w-100 mb-2" style="height: 35px;">
+                                    <source src="audioguia.mp4" type="audio/mp4">
+                                </audio>
+                            </div>
+                            <div class="text-end">
+                                <button class="btn btn-sm btn-outline-secondary py-0 mt-1" style="font-size: 0.75rem;" data-bs-toggle="collapse" data-bs-target="#transcripcion">
+                                    Transcripción
+                                </button>
+                                <div class="collapse mt-2" id="transcripcion">
+                                    <div class="card card-body p-2 bg-white text-start text-muted" style="font-size: 0.75rem; line-height: 1.2;">
+                                        Buenas, Soy Jorge Lerga Ruiz fundador y barbero de barbería JLR, en esta web puedes ver nuestros trabajos, diseños y servicios que hacemos. Reserva ya tu cita y ten tu mejor experiencia con nosotros.
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="collapse mt-2" id="transcripcion">
-                            <div class="card card-body small p-2 bg-white text-start">
-                                <strong>Transcripción:</strong> Buenas, Soy Jorge Lerga Ruiz fundador y barbero de barbería JLR, en esta web puedes ver nuestros trabajos, diseños y servicios que hacemos. Reserva ya tu cita y ten tu mejor experiencia con nosotros.
+                    </div>
+                    
+                    <!-- Columna de Vídeo -->
+                    <div class="col-md-6">
+                        <div class="p-3 border rounded bg-light shadow-sm h-100 d-flex flex-column justify-content-between">
+                            <p class="small fw-bold mb-2"><i class="bi bi-play-btn-fill me-1 text-danger"></i> Tour Barbería</p>
+                            <video class="w-100 rounded shadow-sm flex-grow-1" controls preload="metadata" style="object-fit: cover; min-height: 80px;" aria-label="Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.">
+                                <source src="video_promocional.mp4" type="video/mp4">
+                            </video>
+                            <div class="visually-hidden">
+                                Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.
                             </div>
                         </div>
                     </div>
                 </div>
-                
-                <!-- Sección de Vídeo (Punto 3.4 del temario) -->
-                <div class="video-container mt-4 p-3 border rounded bg-light shadow-sm mx-auto" style="max-width: 320px;">
-                    <p class="small fw-bold mb-2"><i class="bi bi-play-btn-fill me-1 text-danger"></i> Conoce nuestra barbería</p>
-                    <video class="w-100 rounded shadow-sm" controls preload="metadata" aria-label="Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.">
-                        <source src="video_promocional.mp4" type="video/mp4">
-                        Tu navegador no soporta el elemento de vídeo.
-                    </video>
-                    <!-- Alternativa textual para accesibilidad visual (Lector de pantalla) -->
-                    <div class="visually-hidden">
-                        Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.
-                    </div>
+
+                <!-- Botón de Bootstrap que abre el Modal -->
+                <div class="mt-4">
+                    <button type="button" class="btn btn-warning shadow-sm fw-bold px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalCita">
+                        <i class="bi bi-calendar-check me-2"></i> Reservar cita online
+                    </button>
                 </div>
             </div>
 
