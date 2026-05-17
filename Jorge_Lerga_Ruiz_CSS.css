@@ -331,3 +331,47 @@ footer a:hover {
         max-width: 320px;
     }
 }
+
+/* ===== Mejoras Visuales y Elementos Multimedia ===== */
+.audioguia-container, .video-promocional-box {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.audioguia-container:hover, .video-promocional-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1) !important;
+}
+
+.audioguia-titulo {
+    font-size: 0.8rem;
+}
+
+.audioguia-reproductor {
+    height: 30px;
+}
+
+.btn-transcripcion {
+    font-size: 0.70rem;
+}
+
+.texto-transcripcion {
+    font-size: 0.70rem;
+    line-height: 1.1;
+}
+
+.btn-reservar {
+    font-size: 0.9rem;
+}
+
+.video-promocional-container {
+    width: 160px;
+}
+
+.video-titulo {
+    font-size: 0.8rem;
+}
+
+.mapa-placeholder {
+    min-height: 300px;
+    object-fit: cover;
+}
