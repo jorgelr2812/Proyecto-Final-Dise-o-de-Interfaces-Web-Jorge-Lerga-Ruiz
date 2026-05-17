@@ -340,6 +340,7 @@ footer a:hover {
 .audioguia-container:hover, .video-promocional-box:hover {
     transform: translateY(-3px);
     box-shadow: 0 6px 12px rgba(0,0,0,0.1) !important;
+    cursor: pointer;
 }
 
 .audioguia-titulo {
@@ -352,6 +353,7 @@ footer a:hover {
 
 .btn-transcripcion {
     font-size: 0.70rem;
+    cursor: pointer;
 }
 
 .texto-transcripcion {
@@ -361,6 +363,7 @@ footer a:hover {
 
 .btn-reservar {
     font-size: 0.9rem;
+    cursor: pointer;
 }
 
 .video-promocional-container {
