@@ -37,24 +37,26 @@
     <main>
         <section class="presentacion">
             <div class="texto">
-                <h2>Bienvenido a nuestra peluquería</h2>
-                <p>
-                    Ofrecemos servicios de peluquería, estética y cuidado capilar para todo tipo de clientes.
-                    Nos esforzamos por ofrecer un trato personalizado y resultados profesionales.
-                </p>
-                
-                <!-- Sección de Vídeo (Punto 3.4 del temario) -->
-                <div class="video-container my-4">
-                    <video class="w-100 rounded shadow-sm" controls preload="metadata" aria-label="Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.">
-                        <source src="video_promocional.mp4" type="video/mp4">
-                        Tu navegador no soporta el elemento de vídeo.
-                    </video>
-                    <!-- Alternativa textual para accesibilidad visual (Lector de pantalla) -->
-                    <div class="visually-hidden">
-                        Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.
+                <div class="clearfix mb-4">
+                    <!-- Sección de Vídeo (Punto 3.4 del temario) -->
+                    <div class="video-container float-end ms-4 mb-2" style="max-width: 320px;">
+                        <video class="w-100 rounded shadow-sm" controls preload="metadata" aria-label="Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.">
+                            <source src="video_promocional.mp4" type="video/mp4">
+                            Tu navegador no soporta el elemento de vídeo.
+                        </video>
+                        <!-- Alternativa textual para accesibilidad visual (Lector de pantalla) -->
+                        <div class="visually-hidden">
+                            Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.
+                        </div>
                     </div>
+                    
+                    <h2>Bienvenido a nuestra peluquería</h2>
+                    <p>
+                        Ofrecemos servicios de peluquería, estética y cuidado capilar para todo tipo de clientes.
+                        Nos esforzamos por ofrecer un trato personalizado y resultados profesionales.
+                    </p>
                 </div>
-                
+
                 <!-- Botón de Bootstrap que abre el Modal -->
                 <div class="d-flex flex-wrap gap-2 mt-3">
                     <button type="button" class="btn btn-warning shadow-sm fw-bold" data-bs-toggle="modal" data-bs-target="#modalCita">
