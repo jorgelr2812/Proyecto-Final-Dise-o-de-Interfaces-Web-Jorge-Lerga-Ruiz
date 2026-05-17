@@ -37,28 +37,25 @@
     <main>
         <section class="presentacion">
             <div class="texto">
-                <div class="mb-4">
-                    <h2>Bienvenido a nuestra peluquería</h2>
-                    <p>
-                        Ofrecemos servicios de peluquería, estética y cuidado capilar para todo tipo de clientes.
-                        Nos esforzamos por ofrecer un trato personalizado y resultados profesionales.
-                    </p>
-                </div>
-
-                <!-- Elementos Multimedia (Temario 3.3 y 3.4) -->
-                <div class="row g-3 mt-3">
-                    <!-- Columna de Audioguía -->
-                    <div class="col-md-6">
-                        <div class="p-3 border rounded bg-light shadow-sm h-100 d-flex flex-column justify-content-between">
-                            <div>
-                                <p class="small fw-bold mb-2"><i class="bi bi-headphones me-1 text-primary"></i> Audioguía</p>
-                                <audio controls class="w-100 mb-2" style="height: 35px;">
-                                    <source src="audioguia.mp4" type="audio/mp4">
-                                </audio>
-                            </div>
-                            <div class="text-end">
-                                <button class="btn btn-sm btn-outline-secondary py-0 mt-1" style="font-size: 0.75rem;" data-bs-toggle="collapse" data-bs-target="#transcripcion">
-                                    Transcripción
+                <div class="d-flex flex-column flex-md-row gap-4 align-items-center align-items-md-start">
+                    
+                    <!-- Información y Audioguía -->
+                    <div class="flex-grow-1">
+                        <h2>Bienvenido a nuestra peluquería</h2>
+                        <p>
+                            Ofrecemos servicios de peluquería, estética y cuidado capilar para todo tipo de clientes.
+                            Nos esforzamos por ofrecer un trato personalizado y resultados profesionales.
+                        </p>
+                        
+                        <!-- Audioguía -->
+                        <div class="audioguia-container p-3 border rounded bg-light shadow-sm mt-3">
+                            <p class="small fw-bold mb-2"><i class="bi bi-headphones me-1 text-primary"></i> Audioguía de Bienvenida</p>
+                            <audio controls class="w-100" style="height: 35px;">
+                                <source src="audioguia.mp4" type="audio/mp4">
+                            </audio>
+                            <div class="text-end mt-1">
+                                <button class="btn btn-sm btn-outline-secondary py-0" style="font-size: 0.75rem;" data-bs-toggle="collapse" data-bs-target="#transcripcion">
+                                    Ver Transcripción
                                 </button>
                                 <div class="collapse mt-2" id="transcripcion">
                                     <div class="card card-body p-2 bg-white text-start text-muted" style="font-size: 0.75rem; line-height: 1.2;">
@@ -67,27 +64,28 @@
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Botón Reservar -->
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-warning shadow-sm fw-bold px-4 py-2 w-100 w-md-auto" data-bs-toggle="modal" data-bs-target="#modalCita">
+                                <i class="bi bi-calendar-check me-2"></i> Reservar cita online
+                            </button>
+                        </div>
                     </div>
-                    
-                    <!-- Columna de Vídeo -->
-                    <div class="col-md-6">
-                        <div class="p-3 border rounded bg-light shadow-sm h-100 d-flex flex-column justify-content-between">
-                            <p class="small fw-bold mb-2"><i class="bi bi-play-btn-fill me-1 text-danger"></i> Tour Barbería</p>
-                            <video class="w-100 rounded shadow-sm flex-grow-1" controls preload="metadata" style="object-fit: cover; min-height: 80px;" aria-label="Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.">
+
+                    <!-- Vídeo Vertical -->
+                    <div class="flex-shrink-0" style="width: 220px;">
+                        <div class="p-2 border rounded bg-light shadow-sm text-center">
+                            <p class="small fw-bold mb-2 text-danger"><i class="bi bi-play-btn-fill me-1"></i> Tour Barbería</p>
+                            <video class="w-100 rounded" controls preload="metadata" aria-label="Descripción del vídeo: Tour por el interior de la barbería JLR y corte de pelo a un cliente.">
                                 <source src="video_promocional.mp4" type="video/mp4">
                             </video>
                             <div class="visually-hidden">
-                                Descripción del vídeo: Se muestra un tour por el interior de la barbería JLR y a un profesional realizando un corte de pelo a un cliente.
+                                Descripción del vídeo: Tour por el interior de la barbería JLR y corte de pelo a un cliente.
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Botón de Bootstrap que abre el Modal -->
-                <div class="mt-4">
-                    <button type="button" class="btn btn-warning shadow-sm fw-bold px-4 py-2" data-bs-toggle="modal" data-bs-target="#modalCita">
-                        <i class="bi bi-calendar-check me-2"></i> Reservar cita online
-                    </button>
                 </div>
             </div>
 
